@@ -1,0 +1,1032 @@
+<html>
+<head>
+<title>Lithos | Semicon News Aggregator</title>
+<meta name="description" content="Semiconductor news and press release aggregator." />
+<meta name="keywords" content="semiconductor, space and cyber news aggregator" />
+<meta name="author" content="lithos" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href="https://lithosgraphein.com/" />
+<meta http-equiv="content-language" content="en-us" />
+<meta property="og:site_name" content="Lithos Semiconductor" />
+<meta property="og:title" content="Lithos | Semiconductor News Aggregator." />
+<meta property="og:description" content="Harvesting the freshest semiconductor content on the web. Hourly updates for press releases, news articles and government filings." />
+<meta property="og:url" content="https://lithosgraphein.com/" />
+<meta property="og:image" content="https://lithographein.com/images/embed.og.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@lithos_graphein" />
+<meta name="twitter:creator" content="@lithos_graphein" />
+<meta name="twitter:title" content="Lithos' Semiconductor News Aggregator." />
+<meta name="twitter:description" content="Harvesting the freshest semiconductor content on the web. Hourly updates for press releases, news articles and government filings." />
+<meta name="twitter:image:src" content="https://lithosgraphein.com/images/embed.twitter.jpg" /> <!-- 800px by 418px -->
+<meta name="twitter:image:alt" content="Lithos Semicondcutor" />
+<link rel="icon" type="image/x-icon" href="icons/favicon.ico" />
+<style>
+<!-- margin: top right bot left -->
+html, body { margin: 0; padding: 0; color: #000000; background-color: #ffffff; font-family: 'Lucida Console'; }
+table.header { padding-top: 0px; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; font-size: 25px; font-family:'Lucida Console',monospace; }
+table.news { padding-top: 0px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; font-size: 20px; font-family:'Lucida Console'; }
+table.agebar { padding-top: 0px; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; font-size: 25px; font-family:'Lucida Console',monospace; }
+table.menubar { padding-top: 0px; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; font-size: 25px; font-family:'Lucida Console',monospace; }
+table.about { padding-top: 0px; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; font-size: 20px; font-family:'Lucida Console'; }
+td.news { text-align: left; vertical-align: text-top; }
+td.agebar { text-align: right; vertical-align: text-top; }
+td.menubar { text-align: center; vertical-align: middle; background-color: #A9A9A9; }
+td.menubarcurpg { text-align: center; vertical-align: middle; background-color: #e3e700; }
+td.about { text-align: center; vertical-align: text-top; }
+p.news { margin: 1px 1px 5px 1px; }
+p.abouttitle { text-align: center; margin: 0px 10px 0px 10px; }
+p.abouttext { text-align: left; margin: 0px 10px 0px 10px; }
+img.header { border-radius: 30px 0px 0px 0px; }
+img.news { float: left; margin: 5px; }
+img.about { float: left; margin: 5px; }
+img.icon { position: relative; top: 2px; left: 2px; background-color: #DCDCDC; border-radius: 2px 2px 2px 2px; }
+div.header { border-radius: 30px 30px 0px 0px; background-color: #efda68; position: relative; text-align: left; color: black; }
+div.timer { background-color: #efda68; position: absolute; bottom: 8px; right: 16px; text-align: center; }
+div.hlabel { background-color: #ffffff; font-family:'Lucida Console'; font-size: 23px; }
+div.h1  { background-color: #f0aba7; margin: 0px 0px 5px 0px; }
+div.h2  { background-color: #e0afc1; margin: 0px 0px 5px 0px; }
+div.h3  { background-color: #d8a9d3; margin: 0px 0px 5px 0px; }
+div.h5  { background-color: #d6a9ee; margin: 0px 0px 5px 0px; }
+div.h8  { background-color: #b7a4e6; margin: 0px 0px 5px 0px; }
+div.h13 { background-color: #a7a2e8; margin: 0px 0px 5px 0px; }
+div.h21 { background-color: #94a7ee; margin: 0px 0px 5px 0px; }
+div.h34 { background-color: #9cb7e9; margin: 0px 0px 5px 0px; }
+div.h55 { background-color: #a3c8ef; margin: 0px 0px 5px 0px; }
+div.hexpired { background-color: #c7c6c1; margin: 0px 0px 5px 0px; }
+p.h1  { background-color: #f0aba7; margin: 0px 0px 0px 0px; }
+p.h2  { background-color: #e0afc1; margin: 0px 0px 0px 0px; }
+p.h3  { background-color: #d8a9d3; margin: 0px 0px 0px 0px; }
+p.h5  { background-color: #d6a9ee; margin: 0px 0px 0px 0px; }
+p.h8  { background-color: #b7a4e6; margin: 0px 0px 0px 0px; }
+p.h13 { background-color: #a7a2e8; margin: 0px 0px 0px 0px; }
+p.h21 { background-color: #94a7ee; margin: 0px 0px 0px 0px; }
+p.h34 { background-color: #9cb7e9; margin: 0px 0px 0px 0px; }
+p.h55 { background-color: #a3c8ef; margin: 0px 0px 0px 0px; }
+p.hexpired { background-color: #c7c6c1; margin: 0px 0px 0px 0px; }
+div.notice { background-color: #FFD700; margin: 0px 0px 5px 0px; }
+div.colsectiontitle { font-size: 22px; font-family:'Lucida Console',monospace; text-align: center; vertical-align: text-top; background-color: #A9A9A9; margin: 0px 0px 5px 0px; }
+div.colsectionend { font-size: 15px; font-family:'Lucida Console',monospace; text-align: center; vertical-align: text-top; background-color: #A9A9A9; margin: 0px 0px 15px 0px; }
+div.about { border-radius: 10px; background-color: #D3D3D3; }
+.clear { clear: both; margin-top: -1px; height: 1px; overflow: hidden; }
+a:link { color: #000000; background-color: transparent; text-decoration: none; }
+a:visited { color: #000000; background-color: transparent; text-decoration: none; }
+a:hover { color: #000000; background-color: transparent; text-decoration: underline; }
+a:active { color: #000000; background-color: transparent; text-decoration: underline; }
+a.menusel:link { color: #000000; background-color: transparent; text-decoration: none; }
+a.menusel:visited { color: #000000; background-color: transparent; text-decoration: none; }
+a.menusel:hover { color: #000000; background-color: #e3e700; text-decoration: underline; }
+a.menusel:active { color: #000000; background-color: transparent; text-decoration: underline; }
+a.retired:link { color: #FFFFFF; background-color: transparent; text-decoration: none; }
+a.retired:visited { color: #FFFFFF; background-color: transparent; text-decoration: none; }
+a.retired:hover { color: #FFFFFF; background-color: transparent; text-decoration: underline; }
+a.retired:active { color: #FFFFFF; background-color: transparent; text-decoration: underline; }
+.collapsible {
+  background-color: #DCDCDC;
+  <!--color: black;-->
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family:'Lucida Console';
+  font-size: 20px; }
+.active, .collapsible:hover { background-color: #A9A9A9; }
+.collapsible:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px; }
+.active:after { content: '\2212'; }
+.content {
+  padding: 0px 0px 0px 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  <!--background-color: #f0aba7;--> }
+</style>
+</head>
+<body>
+<map name="headermap">
+<area shape="poly" coords="29,18,389,18,389,71,29,71" alt="lithos" href="https://lithosgraphein.com">
+<area shape="rect" coords="42,82,76,115" alt="Twitter" href="https://twitter.com/lithos_graphein" target="_blank" rel="noopener noreferrer">
+</map>
+<table class="header" width="100%" style="min-width:1200px"><td width="100%"><div class="header">
+<img class="header" alt="Lithos Header" usemap="#headermap" src="images/header.jpg?v=4"></img>
+<div class="timer"><b>Last Updated</b><br><span id="lastupdated"></span></div>
+</div></td></table>
+<script>
+var now = new Date();
+var written = new Date(2024,5,28,11,57,45,0);
+var diff = Math.abs(now.getTime() - written.getTime());
+var diffday = Math.floor(diff / (1000 * 60 * 60 * 24));
+var diffhr = Math.floor(diff / (1000 * 60 * 60));
+var diffmin = Math.floor(diff / (1000 * 60));
+var diffsec = Math.floor(diff / 1000);
+var agestring;
+if (diffday > 1) { agestring = diffday+" days ago"; }
+else if (diffday == 1) { agestring = diffday+" day ago"; }
+else if (diffhr > 1) { agestring = diffhr+" hours ago"; }
+else if (diffhr == 1) { agestring = diffhr+" hour ago"; }
+else if (diffmin > 1) { agestring = diffmin+" minutes ago"; }
+else if (diffmin == 1) { agestring = diffmin+" minute ago"; }
+else if (diffsec > 1) { agestring = diffsec+" seconds ago"; }
+else if (diffsec == 1) { agestring = diffsec+" second ago"; }
+else agestring = "[calc_error]";
+document.getElementById("lastupdated").innerHTML = agestring;
+</script>
+<table class="menubar" width="100%" style="min-width:1200px">
+<tr>
+<td class="menubarcurpg" colspan="16" rowspan="2"><a class="menusel" href="index.html" rel="noopener noreferrer">Semicon</a></td>
+<td class="menubar" colspan="18"><a class="menusel" href="nanotech.html" rel="noopener noreferrer">Nanotech</a></td>
+<td class="menubar" colspan="7"><a class="menusel" href="evs.html" rel="noopener noreferrer">EVs</a></td>
+<td class="menubar" colspan="18"><a class="menusel" href="cyber.html" rel="noopener noreferrer">CyberSec</a></td>
+<td class="menubar" colspan="16"><a class="menusel" href="justice.html" rel="noopener noreferrer">Justice</a></td>
+<td class="menubar" colspan="14"><a class="menusel" href="polright.html" rel="noopener noreferrer">/pol/R</a></td>
+<td class="menubar" colspan="11" rowspan="2"><a class="menusel" href="about.html" rel="noopener noreferrer">About</a></td>
+</tr>
+<tr>
+<td class="menubar" colspan="7"><a class="menusel" href="ai.html" rel="noopener noreferrer">AI</a></td>
+<td class="menubar" colspan="18"><a class="menusel" href="space.html" rel="noopener noreferrer">Space</a></td>
+<td class="menubar" colspan="26"><a class="menusel" href="defense.html" rel="noopener noreferrer">Defense</a></td>
+<td class="menubar" colspan="22"><a class="menusel" href="polleft.html" rel="noopener noreferrer">/pol/L</a></td>
+</tr>
+</table>
+<table class="agebar" width="100%" style="min-width:1200px">
+<td class="agebar" width="12%"><div class="hlabel">Age in hrs&nbsp;</div></td>
+<td class="agebar" width="1.6%"><div class="h1">1</div></td>
+<td class="agebar" width="1.6%"><div class="h2">2</div></td>
+<td class="agebar" width="1.6%"><div class="h3">3</div></td>
+<td class="agebar" width="3.2%"><div class="h5">5</div></td>
+<td class="agebar" width="4.8%"><div class="h8">8</div></td>
+<td class="agebar" width="8%"><div class="h13">13</div></td>
+<td class="agebar" width="12.8%"><div class="h21">21</div></td>
+<td class="agebar" width="20.8%"><div class="h34">34</div></td>
+<td class="agebar" width="33.6%"><div class="h55">55</div></td>
+</table>
+<table class="news" width="100%" style="min-width:1200px">
+<!-- Column 0 -->
+<td class="news" width="33%">
+<div class="colsectiontitle">&#11015;&thinsp;Latest Press Releases&thinsp;&#11015;</div>
+<div class="h8">
+<p class="news">
+<img class="icon" src="icons/dom.124.ico"></img>
+<a href="https://www.advantest.com/news/assets/pdf/E_Info_20240628.pdf" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Notice regarding Disposal of Treasury Stock based on Post-issued Restricted Stock Unit Remuneration Plan and Performance Share Unit Plan</b>
+</a></p>
+<button class="collapsible">+2 from&nbsp;<img class="icon" src="icons/dom.124.ico"></img>&nbsp;advantest</button>
+<div class="content">
+<p class="h8"><img class="icon" src="icons/dom.124.ico"></img>
+<a href="https://www.advantest.com/news/assets/pdf/RN82e_1.pdf" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Notice Regarding Resolution Adopted at the 82nd Ordinary General Meeting of Shareholders</b></a></p>
+<p class="h8"><img class="icon" src="icons/dom.124.ico"></img>
+<a href="https://www.advantest.com/news/assets/pdf/E_Info_20240628_02.pdf" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Notice regarding Disposal of Treasury Stock as Restricted Stock</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h8">
+<p class="news">
+<img class="icon" src="icons/dom.28.ico"></img>
+<a href="https://www.imec-int.com/en/articles/unlocking-tomorrows-technology-nodes-inside-imecs-n2-p-pdk-workshop" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Unlocking tomorrow's technology nodes: inside imec's N2 P-PDK workshop</b>
+</a>&thinsp;-&thinsp;Imec’s N2 P-PDK workshop explores advanced semiconductor design strategies. Participants from industry and academia gain hands-on N2 design experience, using tools from Synopsis and Cadence. Imec’s initiative supports global semiconductor innovation and is closely tied to the European Chips Act objectives...
+</p>
+<div class="clear"></div>
+</div>
+<div class="h13">
+<p class="news">
+<img class="icon" src="icons/dom.50.ico"></img>
+<a href="https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2024/0628/cgreport-e.ashx?la=en-us&cvid=20240628014208000000" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Update of Corporate Governance Report (Tokyo Stock Exchange) (PDF: 1.05MB)</b>
+</a></p>
+<button class="collapsible">+1 from&nbsp;<img class="icon" src="icons/dom.50.ico"></img>&nbsp;corporate.murata</button>
+<div class="content">
+<p class="h13"><img class="icon" src="icons/dom.50.ico"></img>
+<a href="https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2024/0628b/factbook2024.ashx?la=en-us&cvid=20240628015210000000" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;FACT BOOK(PDF: 1.47MB)</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h13">
+<div>
+<a href="https://www.apple.com/newsroom/2024/06/apple-vision-pro-arrives-in-china-mainland-hong-kong-japan-and-singapore/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.128.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.69.ico"></img>
+<a href="https://www.apple.com/newsroom/2024/06/apple-vision-pro-arrives-in-china-mainland-hong-kong-japan-and-singapore/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Apple Vision Pro arrives in China mainland, Hong Kong, Japan, and Singapore</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h21">
+<p class="news">
+<img class="icon" src="icons/dom.17.ico"></img>
+<a href="https://toshiba.semicon-storage.com/ap-en/company/news/news-topics/2024/06/power-management-ics-20240628-1.html" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Toshiba Develops 48V-to-1V Non-Isolated DC-DC Converter IC</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h21">
+<div>
+<a href="https://www.mitsubishielectric.com/news/2024/0628.html" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.270.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.144.ico"></img>
+<a href="https://www.mitsubishielectric.com/news/2024/0628.html" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Mitsubishi Electric Delivers Smart-meter System to Taiwan Market as First Overseas Project</b>
+</a></p>
+<button class="collapsible">+1 from&nbsp;<img class="icon" src="icons/dom.144.ico"></img>&nbsp;mitsubishielectric</button>
+<div class="content">
+<p class="h21"><img class="icon" src="icons/dom.144.ico"></img>
+<a href="https://www.mitsubishielectric.com/news/2024/0628-b.html" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Mitsubishi Electric Signs Pilot Contract with RTX's Raytheon to Repair U.S. and Allied Forces Fighter Radars</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<p class="news">
+<img class="icon" src="icons/dom.124.ico"></img>
+<a href="https://www.advantest.com/news/2024/20240627.html" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Advantest’s VOICE 2024 Draws Record Attendance in San Diego</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<p class="news">
+<img class="icon" src="icons/dom.63.ico"></img>
+<a href="https://newsroom.lamresearch.com/Small-Steps,-Big-Impact-Path-to-Our-Net-Zero-Goal" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Small Steps, Big Impact: Path to Our Net Zero Goal</b>
+</a></p>
+<button class="collapsible">+1 from&nbsp;<img class="icon" src="icons/dom.63.ico"></img>&nbsp;newsroom.lamresearch</button>
+<div class="content">
+<p class="h34"><img class="icon" src="icons/dom.63.ico"></img>
+<a href="https://newsroom.lamresearch.com/2024-06-27-Lam-Research-Highlights-its-Progress-to-Create-a-Better-World-Through-Semiconductor-Innovation-in-2023-ESG-Report" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Lam Research Highlights its Progress to Create a Better World Through Semiconductor Innovation in 2023 ESG Report</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<p class="news">
+<img class="icon" src="icons/dom.50.ico"></img>
+<a href="https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2024/0627d/20240627-2-e.ashx?la=en-us&cvid=20240627084822000000" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Notice Regarding Disposal of Treasury Stock as Employee Shareholding Association－Restricted Stock Compensation (PDF: 188KB)</b>
+</a></p>
+<button class="collapsible">+2 from&nbsp;<img class="icon" src="icons/dom.50.ico"></img>&nbsp;corporate.murata</button>
+<div class="content">
+<p class="h34"><img class="icon" src="icons/dom.50.ico"></img>
+<a href="https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2024/0627c/20240627-1-e.ashx?la=en-us&cvid=20240627084821000000" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Notice regarding Disposal of Treasury Shares as Restricted Stock Compensation (PDF: 116KB)</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.50.ico"></img>
+<a href="https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2024/0627/88-resolution-e.ashx?la=en-us&cvid=20240626103811000000" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;[Shareholder's Meeting]Notice of Resolution at the 88th Ordinary General Meeting of Shareholders (PDF: 80.0KB)</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<p class="news">
+<img class="icon" src="icons/dom.136.ico"></img>
+<a href="https://www.marvell.com/company/newsroom/marvell-extends-connectivity-leadership-industry-first-1-6t-pam4-dsp-active-electrical-cables.html" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Marvell Extends Connectivity Leadership With Industry's First 1.6T PAM4 DSP for Active Electrical Cables</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<div>
+<a href="https://www.imec-int.com/en/press/new-leap-belgian-quantum-communication-infrastructure-imec-ugent-and-belnet-realise-first-qkd" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.163.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.28.ico"></img>
+<a href="https://www.imec-int.com/en/press/new-leap-belgian-quantum-communication-infrastructure-imec-ugent-and-belnet-realise-first-qkd" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;New leap in Belgian quantum communication infrastructure: imec, UGent and Belnet realise first QKD links</b>
+</a>&thinsp;-&thinsp;This article highlights recent advancements in neurotechnology, presented in three papers at the 2024 VLSI Circuits Symposium. A new high-density readout IC for multiplexed channels allows for large-scale recordings of brain-surface activity. Imec’s latest neural probe for deep-brain recordings features...
+</p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<p class="news">
+<img class="icon" src="icons/dom.54.ico"></img>
+<a href="https://newsroom.sw.siemens.com/en-US/siemens-olympia-express/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Olympia Express uses Siemens Xcelerator to modernize design and production of world’s best espresso machines</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<p class="news">
+<img class="icon" src="icons/dom.68.ico"></img>
+<a href="https://www.huawei.com/en/news/2024/6/mwcs-5g-a-ai-era" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;5G -Advanced has arrived - LightReading (sponsored)</b>
+</a></p>
+<button class="collapsible">+2 from&nbsp;<img class="icon" src="icons/dom.68.ico"></img>&nbsp;huawei</button>
+<div class="content">
+<p class="h34"><img class="icon" src="icons/dom.68.ico"></img>
+<a href="https://www.huawei.com/en/news/2024/6/mwcs-advance-to-business-new-era" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;In Huawei’s home province, lychee farmers reap the benefits of China’s rural 5G push - SCMP</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.68.ico"></img>
+<a href="https://www.huawei.com/en/news/2024/6/mwcs-secondary-innovation-5g" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;${Title}</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<div>
+<a href="https://blogs.nvidia.com/blog/synctwin-digital-twins-generative-ai-openusd/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.140.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.39.ico"></img>
+<a href="https://blogs.nvidia.com/blog/synctwin-digital-twins-generative-ai-openusd/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Into the Omniverse: SyncTwin Helps Democratize Industrial Digital Twins With Generative AI, OpenUSD</b>
+</a>&thinsp;-&thinsp;SyncTwin’s application enables teams to optimize industrial efficiency while enhancing sustainability across manufacturing processes.
+</p>
+<button class="collapsible">+1 from&nbsp;<img class="icon" src="icons/dom.39.ico"></img>&nbsp;nvidianews.nvidia</button>
+<div class="content">
+<p class="h34"><img class="icon" src="icons/dom.39.ico"></img>
+<a href="https://blogs.nvidia.com/blog/geforce-now-thursday-resident-evil-village/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;GeForce NOW Unleashes High-Stakes Horror With ‘Resident Evil Village’</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<p class="news">
+<img class="icon" src="icons/dom.57.ico"></img>
+<a href="https://newsroom.ibm.com/campaign?item=1836" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Crédit Mutuel Alliance Fédérale Accelerates Deployment of Generative AI in Collaboration with IBM</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<p class="news">
+<img class="icon" src="icons/dom.133.ico"></img>
+<a href="https://mythic.ai/whats-new/mythic-names-nvidia-veteran-dr-taner-ozcelik-as-ceo-to-expand-the-ai-inference-market-with-superior-energy-efficiency-performance-and-cost/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Mythic names NVIDIA veteran Dr. Taner Ozcelik as CEO to expand the AI inference market with superior energy efficiency, performance, and cost</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<p class="news">
+<img class="icon" src="icons/dom.115.ico"></img>
+<a href="https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2024/cadence-partners-with-gsme-to-further-semiconductor-industry-gro.html" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Cadence Partners with GSME to Further Semiconductor Industry Growth in Oman</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<div>
+<a href="https://www.apple.com/newsroom/2024/06/hbcu-students-chart-their-career-paths-in-americas-music-city/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.451.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.69.ico"></img>
+<a href="https://www.apple.com/newsroom/2024/06/hbcu-students-chart-their-career-paths-in-americas-music-city/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;HBCU students chart their career paths in America’s Music City</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<p class="news">
+<img class="icon" src="icons/dom.116.ico"></img>
+<a href="https://ir.akoustis.com/news-events/press-releases/detail/358/akoustis-receives-2-million-in-volume-orders-for-wi-fi-7" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Akoustis Receives $2 Million in Volume Orders for Wi-Fi 7 Program from Tier-1 Carrier</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<div>
+<a href="https://www.apple.com/newsroom/2024/06/apple-the-exchange-trx-now-open-in-kuala-lumpur/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.98.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.69.ico"></img>
+<a href="https://www.apple.com/newsroom/2024/06/apple-the-exchange-trx-now-open-in-kuala-lumpur/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Apple expands Self Service Repair Diagnostics support to Europe</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<p class="news">
+<img class="icon" src="icons/dom.57.ico"></img>
+<a href="https://newsroom.ibm.com/2024-06-26-IBM-Study-Fan-Engagement-and-Consumption-of-Sports-Shifting,-Reveals-New-Opportunities-for-Technology-Integrations-including-AI" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;IBM Study: Fan Engagement and Consumption of Sports Shifting, Reveals New Opportunities for Technology Integrations including AI</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<div>
+<a href="https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/programs/Longevity_by_Design.pdf" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.135.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.69.ico"></img>
+<a href="https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/programs/Longevity_by_Design.pdf" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Apple expands Self Service Repair Diagnostics support to Europe</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<p class="news">
+<img class="icon" src="icons/dom.68.ico"></img>
+<a href="https://www.huawei.com/en/news/2024/6/mwcs-wt-mobile-ai-era" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Huawei illuminates the future of 5G networks - Verdict</b>
+</a></p>
+<button class="collapsible">+1 from&nbsp;<img class="icon" src="icons/dom.68.ico"></img>&nbsp;huawei</button>
+<div class="content">
+<p class="h55"><img class="icon" src="icons/dom.68.ico"></img>
+<a href="https://www.huawei.com/en/news/2024/6/mwcs-all-optical-10giga" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Huawei and Partners Revolutionize Global Financial Industry - Travel and Tour World</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<p class="news">
+<img class="icon" src="icons/dom.68.ico"></img>
+<a href="https://www.huawei.com/en/news/2024/6/mwcs-opengateway-service-api" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;${Title}</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<div>
+<a href="https://blogs.nvidia.com/blog/ai-decoded-broadcast/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.407.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.39.ico"></img>
+<a href="https://blogs.nvidia.com/blog/ai-decoded-broadcast/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Cut the Noise: NVIDIA Broadcast Supercharges Livestreaming, Remote Work</b>
+</a>&thinsp;-&thinsp;NVIDIA Broadcast offers AI-powered features that improve audio and video quality for a variety of use cases.
+</p>
+<button class="collapsible">+1 from&nbsp;<img class="icon" src="icons/dom.39.ico"></img>&nbsp;nvidianews.nvidia</button>
+<div class="content">
+<p class="h55"><img class="icon" src="icons/dom.39.ico"></img>
+<a href="https://blogs.nvidia.com/blog/roblox-anupam-singh/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Thinking Outside the Blox: How Roblox Is Using Generative AI to Enhance User Experiences</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<p class="news">
+<img class="icon" src="icons/dom.51.ico"></img>
+<a href="https://news.medtronic.com/2024-06-26-Medtronic-announces-departure-of-Karen-Parkhill,-Chief-Financial-Officer" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Medtronic announces departure of Karen Parkhill, Chief Financial Officer</b>
+</a>&thinsp;-&thinsp;Medtronic plc (NYSE: MDT), a global leader in healthcare technology, today announced that Karen Parkhill will resign as executive vice president and chief financial officer to accept the role of...
+</p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<p class="news">
+<img class="icon" src="icons/dom.68.ico"></img>
+<a href="https://www.huawei.com/en/news/2024/6/mwcs-ai-network-productivity" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;${Title}</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<p class="news">
+<img class="icon" src="icons/dom.112.ico"></img>
+<a href="https://investor.entegris.com/news-releases/news-release-details/entegris-and-biden-administration-announce-75-million-proposed" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Entegris and Biden Administration Announce up to $75 Million in Proposed Direct Funding Under CHIPS Act to Drive U.S. Semiconductor Manufacturing</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="colsectionend">[End Press Releases]</div>
+</td>
+<!-- Column 1 -->
+<td class="news" width="33%">
+<div class="h3">
+<div>
+<a href="https://www.eenewseurope.com/en/ceo-interview-build-quantum-on-silicon-says-equal1s-lynch/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.283.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/ceo-interview-build-quantum-on-silicon-says-equal1s-lynch/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;CEO interview: Build quantum on silicon says Equal1’s Lynch</b>
+</a>&thinsp;-&thinsp;Equal1 Labs Ltd. (Dublin, Ireland) is preparing to launch its UnityQ quantum computing chip in 2025. It will combine six…
+</p>
+<div class="clear"></div>
+</div>
+<div class="h5">
+<div>
+<a href="https://www.scmp.com/opinion/world-opinion/article/3268294/ai-revolution-were-either-it-together-or-were-it" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.280.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.6.ico"></img>
+<a href="https://www.scmp.com/opinion/world-opinion/article/3268294/ai-revolution-were-either-it-together-or-were-it" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;The AI revolution: we’re either in it together or we’re in for it</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h8">
+<div>
+<a href="https://www.scmp.com/business/companies/article/3268496/hong-kong-science-parks-tie-hi-tech-firms-boost-citys-innovation-hub-ambitions" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.175.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.6.ico"></img>
+<a href="https://www.scmp.com/business/companies/article/3268496/hong-kong-science-parks-tie-hi-tech-firms-boost-citys-innovation-hub-ambitions" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Hong Kong science park’s tie-ups to bring advanced manufacturing to city</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h13">
+<p class="news">
+<img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/chip-industry-week-in-review-41/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Chip Industry Week In Review</b>
+</a>&thinsp;-&thinsp;DAC; CHIPS funding; CXL standards; Nexperia investment; US curbs tech investments; Accellera's Federated Simulation Group; European sustainability concerns; SIA's tracking tool; Multibeam's multicolumn litho system. The post Chip Industry Week In Review appeared first on Semiconductor Engineering .
+</p>
+<div class="clear"></div>
+</div>
+<div class="h21">
+<p class="news">
+<img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/lower-energy-high-performance-llm-on-fpga-without-matrix-multiplication/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Lower Energy, High Performance LLM on FPGA Without Matrix Multiplication</b>
+</a>&thinsp;-&thinsp;A new technical paper titled “Scalable MatMul-free Language Modeling” was published by UC Santa Cruz, Soochow University, UC Davis, and LuxiTech. Abstract “Matrix multiplication (MatMul) typically dominates the overall computational cost of large language models (LLMs). This cost only grows as LLMs...
+</p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<div>
+<a href="https://www.theregister.com/2024/06/27/intel_says_its_optical_chiplet/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.179.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.16.ico"></img>
+<a href="https://www.theregister.com/2024/06/27/intel_says_its_optical_chiplet/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Intel flashes 4 Tbps optical chiplet to supercharge datacenters</b>
+</a>&thinsp;-&thinsp;Likens tech to going from horse-drawn carriages to trucks
+</p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<div>
+<a href="https://www.scmp.com/tech/big-tech/article/3268262/micron-stock-declines-after-forecast-fails-meet-lofty-ai-spending-expectations" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.434.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.6.ico"></img>
+<a href="https://www.scmp.com/tech/big-tech/article/3268262/micron-stock-declines-after-forecast-fails-meet-lofty-ai-spending-expectations" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Micron stock drops after forecast falls short of lofty AI spending expectations</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<p class="news">
+<img class="icon" src="icons/dom.153.ico"></img>
+<a href="https://www.anandtech.com/show/21459/micron-u-s-fabs-will-start-operating-in-2026-2029" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Micron: U.S. Fabs Will Start Operating in 2026 – 2029</b>
+</a>&thinsp;-&thinsp;When Micron announced plans to build two new fabs in the U.S. in 2022, the company vaguely said both would come online by the decade&#39;s end. Then, in 2023, it began to optimize its spending, which pushed production at these fabrication facilities. This week, the company outlined more precise timeframes...
+</p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<div>
+<a href="https://www.scmp.com/tech/big-tech/article/3268305/chinese-ai-firm-iflytek-says-its-llms-are-trained-completely-huawei-platform" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.356.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.6.ico"></img>
+<a href="https://www.scmp.com/tech/big-tech/article/3268305/chinese-ai-firm-iflytek-says-its-llms-are-trained-completely-huawei-platform" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Chinese AI firm iFlyTek says its LLMs are trained completely on Huawei platform</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<div>
+<a href="https://www.theregister.com/2024/06/27/alibaba_network_datacenter_designs_revealed/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.194.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.16.ico"></img>
+<a href="https://www.theregister.com/2024/06/27/alibaba_network_datacenter_designs_revealed/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Lenovo brings its virtualization and cloud stack to Chinese chip designer Loongson's CPU architecture</b>
+</a>&thinsp;-&thinsp;Exclusive 15,000 GPUs per DC, in hosts packing eight apiece, plus nine NICs – helped by switches with custom heat sinks
+</p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<div>
+<a href="https://www.theregister.com/2024/06/27/lenovo_loongson/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.218.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.16.ico"></img>
+<a href="https://www.theregister.com/2024/06/27/lenovo_loongson/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Huawei struggling to ramp GPU production as US sanctions bite</b>
+</a>&thinsp;-&thinsp;NAS vendors, healthcare software vendors, and government buyers join the march to silicon sovereignty
+</p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<p class="news">
+<img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/new-way-to-transmit-light-signals-through-a-chip-nist/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;New Way To Transmit Light Signals Through A Chip (NIST)</b>
+</a>&thinsp;-&thinsp;A technical paper titled “Bound-state-in-continuum guided modes in a multilayer electro-optically active photonic integrated circuit platform” was published by researchers at the National Institute of Standards and Technology (NIST), University of Maryland, and Theiss Research. Abstract: “In many...
+</p>
+<button class="collapsible">+4 from&nbsp;<img class="icon" src="icons/dom.110.ico"></img>&nbsp;semiengineering</button>
+<div class="content">
+<p class="h55"><img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/an-llm-approach-for-large-scale-soc-security-verification-and-policy-generation-u-of-florida/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;An LLM Approach For Large-Scale SoC Security Verification And Policy Generation (U. of Florida)</b></a></p>
+<p class="h55"><img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/nanosized-blocks-self-assemble-in-water-to-create-tiny-floating-checkerboards-uc-san-diego-duke/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Nanosized Blocks Self-Assemble In Water To Create Tiny Floating Checkerboards (UC San Diego, Duke)</b></a></p>
+<p class="h55"><img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/a-memory-device-with-mos2-channel-for-high-density-3d-nand-flash-based-in-memory-computing/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;A Memory Device With MoS2 Channel For High-Density 3D NAND Flash-Based In-Memory Computing</b></a></p>
+<p class="h55"><img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/thermoelectric-active-cooling-hot-spots-in-chips/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Thermoelectric Active Cooling Hot Spots in Chips</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<div>
+<a href="https://www.tomshardware.com/tech-industry/semiconductors/nvidia-omniverse-used-by-researchers-to-analyze-and-improve-stacked-chip-designs-in-3d" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.30.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.181.ico"></img>
+<a href="https://www.tomshardware.com/tech-industry/semiconductors/nvidia-omniverse-used-by-researchers-to-analyze-and-improve-stacked-chip-designs-in-3d" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Nvidia Omniverse used by researchers to analyze and improve stacked chip designs in 3D</b>
+</a>&thinsp;-&thinsp;As chips adopt 3D stacking technologies, designers will need to see these chips in 3D.
+</p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<div>
+<a href="https://semiwiki.com/eda/346936-__trashed-3/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.438.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.189.ico"></img>
+<a href="https://semiwiki.com/eda/346936-__trashed-3/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;New EDA Tool for 3D Thermal Analysis</b>
+</a>&thinsp;-&thinsp;An emerging trend with IC design is the growing use of chiplets and even 3D IC designs, as the disaggregated approach has some economic and performance benefits over a single SoC. There are thermal challenges with using chiplets and 3D IC designs, so that means that thermal analysis has become more important....
+</p>
+<button class="collapsible">+1 from&nbsp;<img class="icon" src="icons/dom.189.ico"></img>&nbsp;semiwiki</button>
+<div class="content">
+<p class="h55"><img class="icon" src="icons/dom.189.ico"></img>
+<a href="https://semiwiki.com/3dic/347005-siemens-provides-a-complete-3d-ic-solution-with-innovator3d-ic/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Siemens Provides a Complete 3D IC Solution with Innovator3D IC</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<div>
+<a href="https://www.scmp.com/tech/tech-war/article/3268166/tech-war-dreams-die-bankrupt-chinese-semiconductor-start-woodson" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.2.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.6.ico"></img>
+<a href="https://www.scmp.com/tech/tech-war/article/3268166/tech-war-dreams-die-bankrupt-chinese-semiconductor-start-woodson" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Semiconductor start-up Woodson goes belly up, dashing China’s chip ambitions</b>
+</a></p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<div>
+<a href="https://www.theregister.com/2024/06/26/etched_asic_ai/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.146.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.16.ico"></img>
+<a href="https://www.theregister.com/2024/06/26/etched_asic_ai/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Etched looks to challenge Nvidia with an ASIC purpose-built for transformer models</b>
+</a>&thinsp;-&thinsp;Startup says Sohu chip will be 20x faster than Nvidia's H100 in Llama 70B … assuming it's actually built
+</p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<div>
+<a href="https://semiwiki.com/eda/346703-novelty-based-methods-for-random-test-selection-innovation-in-verification/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.398.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.189.ico"></img>
+<a href="https://semiwiki.com/eda/346703-novelty-based-methods-for-random-test-selection-innovation-in-verification/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Novelty-Based Methods for Random Test Selection. Innovation in Verification</b>
+</a>&thinsp;-&thinsp;Coverage improvement effectiveness through randomized testing declines as total coverage improves. Attacking stubborn holes in coverage could be augmented through learned novel test guidance to random test selection. Paul Cunningham (GM, Verification at Cadence), Raúl Camposano (Silicon Catalyst, entrepreneur,...
+</p>
+<button class="collapsible">+1 from&nbsp;<img class="icon" src="icons/dom.189.ico"></img>&nbsp;semiwiki</button>
+<div class="content">
+<p class="h55"><img class="icon" src="icons/dom.189.ico"></img>
+<a href="https://semiwiki.com/eda/346936-3d-thermal-analysis-2/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;New EDA Tool for 3D Thermal Analysis</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+</td>
+<!-- Column 2 -->
+<td class="news" width="33%">
+<div class="h3">
+<p class="news">
+<img class="icon" src="icons/dom.153.ico"></img>
+<a href="https://www.anandtech.com/show/21452/the-lian-li-hydroshift-lcd-360s-cooler-review" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;The Lian Li Hydroshift LCD 360S AIO Cooler Review: Sleek, Stylish, and Lively</b>
+</a>&thinsp;-&thinsp;Among the packed field of PC hardware manufacturers, Lian Li is a company that arguably shouldn&#39;t even need an introduction. The quirky company has developed a devout following thanks to its focus on premium-quality aluminum computer cases that, more often that not, and come with in some rather unique...
+</p>
+<div class="clear"></div>
+</div>
+<div class="h8">
+<div>
+<a href="https://www.eenewseurope.com/en/first-avx-waterproof-poke-home-connector/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.54.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/first-avx-waterproof-poke-home-connector/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;First AVX waterproof poke-home connector</b>
+</a>&thinsp;-&thinsp;Kyocera AVX has launched its first waterproof ‘poke home’ IP67 waterproof wire-to-wire connector family. The 9289-000 single-piece wire-to-wire connector series is aimed…
+</p>
+<button class="collapsible">+5 from&nbsp;<img class="icon" src="icons/dom.1.ico"></img>&nbsp;eenewseurope</button>
+<div class="content">
+<p class="h8"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/low-power-implementation-for-generative-ai/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Low power implementation for generative AI</b></a></p>
+<p class="h8"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/libattion-raises-e14m-for-second-life-battery-packs/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Libattion raises €14m for second life battery packs</b></a></p>
+<p class="h8"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/satellite-connection-for-solar-powered-forest-wildfire-sensor-network/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Satellite connection for solar-powered forest wildfire sensor network</b></a></p>
+<p class="h8"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/st-restructures-for-the-ai-age/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;ST restructures for the AI age</b></a></p>
+<p class="h8"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/impedance-matching-network-for-sub-2nm-chip-making/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Impedance Matching Network for sub-2nm chip making</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h8">
+<div>
+<a href="https://semiwiki.com/semiconductor-manufacturers/intel/346992-vlsi-technology-symposium-intel-describes-i3-process-how-does-it-measure-up/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.282.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.189.ico"></img>
+<a href="https://semiwiki.com/semiconductor-manufacturers/intel/346992-vlsi-technology-symposium-intel-describes-i3-process-how-does-it-measure-up/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;VLSI Technology Symposium – Intel describes i3 process, how does it measure up?</b>
+</a>&thinsp;-&thinsp;At the VLSI Technology Symposium this week Intel released details on their i3 process. Over the last four nodes Intel has had an interesting process progression. In 2019, 10nm finally entered production with both high performance and high-density standard cells. 10nm went through several iterations eventually...
+</p>
+<div class="clear"></div>
+</div>
+<div class="h13">
+<p class="news">
+<img class="icon" src="icons/dom.19.ico"></img>
+<a href="https://www.trendforce.com/presscenter/news/20240628-12210.html" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Q3 Contract Prices of NAND Flash Products Constrained by Increased Production and Lower End-User Demand; Estimated to Rise by 5–10%, Says TrendForce</b>
+</a>&thinsp;-&thinsp;TrendForce reports that while the enterprise sector continues to invest in server infrastructure—especially with the rising adoption of AI driving demand for enterprise SSDs—the consumer electronics market remains lackluster. This, combined with NAND suppliers aggressively ramping up production in...
+</p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<div>
+<a href="https://www.eenewseurope.com/en/breakthrough-may-clear-major-hurdle-for-quantum-computers/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.447.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/breakthrough-may-clear-major-hurdle-for-quantum-computers/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Breakthrough may clear major hurdle for quantum computers</b>
+</a>&thinsp;-&thinsp;A research team from Chalmers University of Technology has created a unique system that can pave the way for longer computation time and more robust quantum computers The system…
+</p>
+<button class="collapsible">+9 from&nbsp;<img class="icon" src="icons/dom.1.ico"></img>&nbsp;eenewseurope</button>
+<div class="content">
+<p class="h34"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/axelera-ai-raises-68m-for-data-centre-push/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Axelera AI raises $68m for data centre push</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/multibeam-brings-back-e-beam-lithography-skywater-buys-in/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Multibeam brings back e-beam lithography, Skywater buys in</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/optical-interconnect-boosts-ai-performance-by-4000/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Cerebras looks to optical interconnect for 4000x AI boost</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/report-5g-driving-change-fwa-strategies-for-service-providers/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Report: 5G driving change in FWA strategies for service providers</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/200m-for-200mm-gan-and-sic-in-hamburg/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;$200m for 200mm GaN and SiC in Hamburg</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/adtran-and-iridium-boost-pnt-resilience-against-gnss-threats/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Adtran and Iridium boost PNT resilience against GNSS threats</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/rambus-offers-ddr5-server-pmics-to-address-ai-workloads/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Rambus offers DDR5 server PMICs to address AI workloads</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/squeezed-light-for-photonic-quantum-computing/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Squeezed light for photonic quantum computing</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/40m-to-scale-up-solid-state-battery-production-for-evs/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;$40m to scale up solid state battery production for EVs</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<p class="news">
+<img class="icon" src="icons/dom.19.ico"></img>
+<a href="https://www.trendforce.com/presscenter/news/20240627-12207.html" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Demand for Servers to Support Second Half of the Year; DRAM Prices Expected to Increase by 8–13% in Q3, Says TrendForce</b>
+</a>&thinsp;-&thinsp;TrendForce reports that a recovery in demand for general servers—coupled with an increased production share of HBM by DRAM suppliers—has led suppliers to maintain their stance on hiking prices. As a result, the ASP of DRAM in the third quarter is expected to continue rising, with an anticipated increase...
+</p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<div>
+<a href="https://semiwiki.com/eda/346821-three-new-circuit-simulators-from-siemens-eda/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.199.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.189.ico"></img>
+<a href="https://semiwiki.com/eda/346821-three-new-circuit-simulators-from-siemens-eda/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Three New Circuit Simulators from Siemens EDA</b>
+</a>&thinsp;-&thinsp;The week before DAC I had the privilege to take a video call with Pradeep Thiagarajan – Product Manager, Simulation, Custom IC Verification at Siemens EDA to get an update on new simulation products. I’ve been following Solido for years now and knew that they were an early adopter of ML for Monte...
+</p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<div>
+<a href="https://techxplore.com/news/2024-06-solar-cells-reality.html" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.450.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.149.ico"></img>
+<a href="https://techxplore.com/news/2024-06-solar-cells-reality.html" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;'Self-healing' solar cells could become reality</b>
+</a>&thinsp;-&thinsp;Solar cells of the future could be able to withstand corrosive susceptibility by "self-healing," in a break-through the scientific community has long been pursuing.
+</p>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<p class="news">
+<img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/enabling-2-5d-3d-multi-die-package/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Enabling 2.5D/3D Multi-Die Package</b>
+</a>&thinsp;-&thinsp;Both approaches to integrating multiple chiplets have unique challenges. The post Enabling 2.5D/3D Multi-Die Package appeared first on Semiconductor Engineering .
+</p>
+<button class="collapsible">+9 from&nbsp;<img class="icon" src="icons/dom.110.ico"></img>&nbsp;semiengineering</button>
+<div class="content">
+<p class="h34"><img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/the-value-of-innovation/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;The Value Of Innovation</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/languages-role-in-embodied-agents/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Language’s Role In Embodied Agents</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/risc-v-verification-from-simulation-to-formal/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;RISC-V Verification: From Simulation To Formal</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/navigating-the-future-of-eda/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Navigating The Future Of EDA</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/digital-twins-gaining-traction-in-complex-designs/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Digital Twins Gaining Traction In Complex Designs</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/the-fundamentals-of-software-testing/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;The Fundamentals Of Software Testing</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/streamlining-soc-design-with-advanced-ip-and-integration-solutions/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Streamlining SoC Design With Advanced IP And Integration Solutions</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/accelerate-test-regressions-with-synopsys-vip-using-dynamic-test-loading-in-vcs/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Accelerate Test Regressions with Synopsys VIP Using Dynamic Test Loading in VCS</b></a></p>
+<p class="h34"><img class="icon" src="icons/dom.110.ico"></img>
+<a href="https://semiengineering.com/data-coherence-across-silos-and-hierarchy/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Data Coherence Across Silos And Hierarchy</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h34">
+<div>
+<a href="https://semiwiki.com/podcast/podcast-ep231-details-of-the-new-solido-simulation-suite-with-sathish-balasubramanian/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.134.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.189.ico"></img>
+<a href="https://semiwiki.com/podcast/podcast-ep231-details-of-the-new-solido-simulation-suite-with-sathish-balasubramanian/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Podcast EP231: Details of the New Solido Simulation Suite with Sathish Balasubramanian</b>
+</a>&thinsp;-&thinsp;Dan is joined by Sathishkumar Balasubramanian. Sathish currently leads the product management and marketing organization for CustomIC Verification (CICV) division at Siemens. Sathish is an experienced product leader with over 20+ years of experience in the EDA industry. Sathish’s focus is on bringing...
+</p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<p class="news">
+<img class="icon" src="icons/dom.153.ico"></img>
+<a href="https://www.anandtech.com/show/21458/frore-unveils-waterproof-airjet-mini-sport-for-smartphones" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Frore Unveils Waterproof AirJet Mini Sport for Smartphones</b>
+</a>&thinsp;-&thinsp;Over the past couple of years, Frore Systems has demonstrated several ways that its AirJet solid-state active cooling systems can be used to improve cooling in fanless devices like laptops, tablets, SSDs, and edge computing devices. But there are a subset of those applications that need their cooling...
+</p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<div>
+<a href="https://www.theregister.com/2024/06/26/huawei_struggling_to_ramp_gpu/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.440.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.16.ico"></img>
+<a href="https://www.theregister.com/2024/06/26/huawei_struggling_to_ramp_gpu/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Huawei struggling to ramp GPU production as US sanctions bite</b>
+</a>&thinsp;-&thinsp;President Xi tells nation that battle for tech dominance, game between 'international powers' are 'intertwined'
+</p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<div>
+<a href="https://www.eenewseurope.com/en/infrared-vcsel-laser-has-led-performance/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.416.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/infrared-vcsel-laser-has-led-performance/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Infrared VCSEL laser has LED performance</b>
+</a>&thinsp;-&thinsp;Rohm has developed an infrared light source that encapsulates a VCSEL (Vertical Cavity Surface Emitting Laser) element in a resin…
+</p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<p class="news">
+<img class="icon" src="icons/dom.153.ico"></img>
+<a href="https://www.anandtech.com/show/21457/nvidia-ad102-gpu-pops-up-in-geforce-rtx-4070-ti-super-cards" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;NVIDIA's AD102 GPU Pops Up in MSI GeForce RTX 4070 Ti Super Cards</b>
+</a>&thinsp;-&thinsp;As GPU families enter the later part of their lifecycles, we often see chip manufacturers start to offload stockpiles of salvaged chips that, for one reason or another, didn&#39;t make the grade for the tier of cards they normally are used in. These recovered chips are fairly unremarkable overall, but...
+</p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<div>
+<a href="https://www.eenewseurope.com/en/large-body-fcbga-substrate-for-data-centers/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.401.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/large-body-fcbga-substrate-for-data-centers/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Large body FCBGA substrate for data centers</b>
+</a>&thinsp;-&thinsp;The state-of-the-art large body FCBGA is ideal for HPC chips as well as CPUs, GPUs, and 2.5D packages (known as…
+</p>
+<button class="collapsible">+2 from&nbsp;<img class="icon" src="icons/dom.1.ico"></img>&nbsp;eenewseurope</button>
+<div class="content">
+<p class="h55"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/recycled-cardboard-paper-for-ambient-radio-frequency-energy-harvesting/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Recycled Cardboard Paper for Ambient Radio Frequency Energy Harvesting</b></a></p>
+<p class="h55"><img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/moving-objects-precisely-with-sound/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Moving objects precisely with sound</b></a></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<div>
+<a href="https://www.eenewseurope.com/en/cadence-adds-noc-to-system-ip-portfolio-to-optimize-connectivity/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.386.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/cadence-adds-noc-to-system-ip-portfolio-to-optimize-connectivity/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Cadence adds NoC to system IP portfolio to optimize connectivity</b>
+</a>&thinsp;-&thinsp;Cadence Janus NoC enables design teams to achieve better PPA faster and with lower risk, freeing up valuable engineering resources…
+</p>
+<div class="clear"></div>
+</div>
+<div class="h55">
+<div>
+<a href="https://www.eenewseurope.com/en/chiplets-drive-new-automated-design-tools-at-leti/" target="_blank" rel="noopener noreferrer">
+<img class="news" src="images/news.378.jpg?=v202462811"></img></a>
+</div>
+<p class="news">
+<img class="icon" src="icons/dom.1.ico"></img>
+<a href="https://www.eenewseurope.com/en/chiplets-drive-new-automated-design-tools-at-leti/" target="_blank" rel="noopener noreferrer">
+<b>&thinsp;Chiplets drive new automated design tools at Leti</b>
+</a>&thinsp;-&thinsp;CEA-Leti has shown a scalable chiplet architecture for automotive and developed new automated tools for design exploration. The move to…
+</p>
+<div class="clear"></div>
+</div>
+</td>
+</table>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight) { content.style.maxHeight = null; }
+		else { content.style.maxHeight = content.scrollHeight + "px"; }
+		});
+	}
+</script>
+</body>
+</html>
